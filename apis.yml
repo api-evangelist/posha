@@ -1,7 +1,25 @@
 aid: posha
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/posha.png
 name: Posha
-description: 'Posha is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Posha (formerly Nymble) is a consumer robotics company that makes an autonomous
+  countertop kitchen robot which cooks fresh, home-style meals from raw ingredients across
+  1,000+ recipes. The device combines robotics, computer-vision cameras, automated heat,
+  timing and stirring control, and culinary AI, paired with an iOS/Android companion app
+  for real-time monitoring and recipe control. Backed by Accel, Posha is a consumer hardware
+  and appliance product with a companion mobile app; it does not publish a public developer
+  API, SDK, or webhook surface. Added to the API Evangelist network as a portfolio-company
+  lead and enriched with real, verifiable public properties.'
 url: https://raw.githubusercontent.com/api-evangelist/posha/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Kitchen Robotics
+- Home Automation
+- Cooking
+- Culinary AI
+- Consumer Hardware
+- Robotics
+- Appliances
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/posha-domain-security.yml
 - type: Website
-  url: https://www.eatwithnymble.com/
+  url: https://www.posha.com/
+- type: About
+  url: https://www.posha.com/about
+- type: Blog
+  url: https://www.posha.com/stories
+- type: Support
+  url: https://www.posha.com/posha-circle-membership-help-center
+- type: Pricing
+  url: https://www.posha.com/private-chef
+- type: PrivacyPolicy
+  url: https://www.posha.com/privacy-policy
+- type: TermsOfService
+  url: https://www.posha.com/terms-of-use
+- type: LLMsTxt
+  url: llms/posha-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 3
+  pass: local-v1
